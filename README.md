@@ -12,12 +12,12 @@ Configuration
 - Install redis
 - Install graphicsmagick (ensure jpeg and png flags are set)
 - Install nodejs
-- Make sure to update secret token: cp ./conf/envDefault.js to
-  ./conf/envLocal.js.
-- Check there are no broken tests: ./node_modules/mocha/bin/mocha
-  --recursive (or just run mocha --resursive if you have installed it
+- Make sure to update secret token: `cp ./conf/envDefault.js` to
+  `./conf/envLocal.js`.
+- Check there are no broken tests: `./node_modules/mocha/bin/mocha`
+  `--recursive` (or just run `mocha --resursive` if you have installed it
   globally)
-- Run server: node ./server.js
+- Run server: node `./server.js`
 
 Database
 --------
@@ -45,11 +45,11 @@ attachment:<attachmentId> { mimeType, filename, extension, path, createdAt, upda
 API
 ---
 
-- GET /v1/timeline/:username - returns all posts from user <username>
-- GET /v1/timeline - returns river of news for auth user
-- GET /v1/posts/:postId
-- GET /v1/posts/:postId/comments # not implemented yet
-- POST /v1/posts
-- POST /v1/posts/:postId/like
-- POST /v1/posts/:postId/unlike
-- POST /v1/comments
+- `GET /v1/timeline/:username` - returns all posts from user <username>
+- `GET /v1/timeline` - returns river of news for auth user
+- `GET /v1/posts/:postId`
+- `GET /v1/posts/:postId/comments` # not implemented yet
+- `POST /v1/posts`
+- `POST /v1/posts/:postId/like`
+- `POST /v1/posts/:postId/unlike`
+- `POST /v1/comments`
